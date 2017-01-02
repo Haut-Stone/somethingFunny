@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			alert('你是笨蛋');
+			alert('你是笨蛋');
+			alert('你不信嘛');
+
+			function import2() {
+				var name = prompt("请输入我是笨蛋", "");
+				if(/*name == true && */name == '我是笨蛋' ) {
+					/*if(name == '我是笨蛋') {
+						alert('真自觉~');
+					} else {
+						alert('乖乖听我的话输入');
+						import2();
+					}*/
+					alert('真自觉~');
+				} else {
+					alert('乖乖听我的话输入');
+					import2();
+				}
+				
+				
+				
+				
+				/*if(name == '我是笨蛋') {
+					alert('真自觉~');
+				} else {
+					alert('乖乖听我的话输入');
+					import2();
+				}*/
+			}
+
+			function regist() {
+				var r = confirm("你认为你很笨吗？");
+				if(r == true) {
+					alert("是的你确实很笨！");
+
+				} else {
+					alert("就你还不笨，快重新选择！");
+					regist();
+				}
+			}
+			import2();
+			regist();
+			for (var a=1;a++;a<=19) {
+				alert('笨蛋');
+			}
+			alert('好吧，你真的很傻，饶了你了~');
+		</script>
+	</body>
+
+</html>
