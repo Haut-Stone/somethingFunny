@@ -7,7 +7,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-03 13:04:38
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-03 13:42:51
+* @Last Modified time: 2017-01-03 17:37:12
 */
 //只可惜Mac上用不了。。
 #include <iostream>
@@ -24,7 +24,7 @@ int main(void)
 	int x = 1;
 	int y = 10;
 	for (x=1;x<10;x++){
-		system("clear");
+		system("cls");
 		for (int i = 0; i < x; ++i)
 		{
 			printf("\n");
