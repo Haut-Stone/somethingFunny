@@ -2,22 +2,59 @@
 * @Author: Haut-Stone
 * @Date:   2017-01-18 19:31:39
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-01-19 23:21:35
+* @Last Modified time: 2017-01-20 20:09:13
 */
-//会动的地球，虽然不会用，先留着。
-eval(z='p="<"+"pre>"/* ,.oq#+     ,._, */;for(y in n="zw24l6k\
-4e3t4jnt4qj24xh2 x/* =<,m#F^    A W###q. */42kty24wrt413n243n\
-9h243pdxt41csb yz/* #K       q##H######Am */43iyb6k43pk7243nm\
-r24".split(4)){/* dP      cpq#q##########b, */for(a in t=pars\
-eInt(n[y],36)+/*         p##@###YG=[#######y */(e=x=r=[]))for\
-(r=!r,i=0;t[a/*         d#qg `*PWo##q#######D */]>i;i+=.05)wi\
-th(Math)x-= /*        aem1k.com Q###KWR#### W[ */.05,0>cos(o=\
-new Date/1e3/*      .Q#########Md#.###OP  A@ , */+x/PI)&&(e[~\
-~(32*sin(o)*/* ,    (W#####Xx######.P^     T % */sin(.5+y/7))\
-+60] =-~ r);/* #y    `^TqW####P###BP           */for(x=0;122>\
-x;)p+="   *#"/* b.        OQ####x#K           */[e[x++]+e[x++\
-]]||(S=("eval"/* l         `X#####D  ,       */+"(z=\'"+z.spl\
-it(B = "\\\\")./*           G####B" #       */join(B+B).split\
-(Q="\'").join(B+Q/*          VQBP`        */)+Q+")//m1k")[x/2\
-+61*y-1]).fontcolor/*         TP         */(/\\w/.test(S)&&"#\
-03B");document.body.innerHTML=p+=B+"\\n"}setTimeout(z)')//
+
+
+function fun1() {
+    var name = prompt("快输入，我是笨蛋", "");
+    if(name == "我是笨蛋"){
+        alert('真自觉');
+    }else{
+        alert('不听话的小孩子会被鬼吃掉欧');
+        fun1();
+    }
+}
+
+function fun2() {
+    var r = confirm("你觉得你很笨吗？");
+    var x;
+    if(r == true){
+        x = confirm("再问一遍真的吗？");
+        if(x == true){
+            alert("好吧，你还真是无可救药呢");
+        }else{
+            alert("不肯说实话？只好再问一遍了");
+            fun2();
+        }
+    }else{
+        alert("你既然点开了链接，快重新选择");
+        fun2();
+    }
+}
+
+function fun0(){
+	var ans = prompt("输入金手指跳过","");
+	if(ans == "123"){
+		alert("哈哈，你绝对不是一般人");
+		alert("快去补番吧，不要在这里浪费时间了233");
+		window.close(); 
+	}else if(ans == "金手指"){
+		alert("你以为我傻吗。。。");
+	}else{
+		alert("接受制裁吧!");
+	}
+}
+
+fun0();
+alert("来玩个游戏吧");
+alert('你是笨蛋');
+alert('什么？');
+alert('我说你是笨蛋啊');
+
+fun1();
+fun2();
+for (var a=1;a<=19;a++) {
+    alert('笨蛋');
+}
+alert('好吧，你真的很傻，饶了你了~');
