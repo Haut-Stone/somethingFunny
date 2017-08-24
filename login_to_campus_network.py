@@ -2,7 +2,7 @@
 # @Author: Haut-Stone
 # @Date:   2017-08-24 22:22:35
 # @Last Modified by:   Haut-Stone
-# @Last Modified time: 2017-08-24 22:23:41
+# @Last Modified time: 2017-08-24 22:45:45
 
 import requests
 from bs4 import BeautifulSoup 
@@ -68,12 +68,15 @@ class LoginNetwork():
 		else:
 			if response.headers['Content-Length'] == '0':
 				print('（≧∇≦）バイバイ...')
+			elif response.headers['Content-Length'] == '39':
+				print('咦， 勇者你的异世界通行证是不是有错误啊？')
+				print('再去检查一下吧')
+
 			else:
 				self.Chanting()
 				print('现在是异世界时间')
 				print(time.asctime(time.localtime(time.time())))
 				print('欢迎来到异世界')
 
-# 例子，中二到爆炸，羞耻到爆炸，Explosion!!!!!!
 a = LoginNetwork()
-a.login(username='username',password='password')
+a.login(username='201616010413',password='wnb-veE-d9v-ZZ5')
