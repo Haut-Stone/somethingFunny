@@ -2,7 +2,7 @@
 # @Author: Haut-Stone
 # @Date:   2017-08-24 22:22:35
 # @Last Modified by:   Haut-Stone
-# @Last Modified time: 2017-08-24 22:45:45
+# @Last Modified time: 2017-09-15 18:08:00
 
 import requests
 from bs4 import BeautifulSoup 
@@ -79,4 +79,4 @@ class LoginNetwork():
 				print('欢迎来到异世界')
 
 a = LoginNetwork()
-a.login(username='201616010413',password='wnb-veE-d9v-ZZ5')
+a.login(username='',password='')
