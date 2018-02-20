@@ -1,0 +1,43 @@
+<!-- 清除浮动防止内容过高导致的自动换行，把浏览器拖成最窄，再把下一行注释掉试试就明白了，相当于用小东西占了一个位置，来把盒子再次挤到下一行 -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bootstrap 模板</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+      <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-6 col-sm-3" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+             <div class="col-xs-6 col-sm-3" style="background-color: #dedef8; border: solid;">
+               <p>第2个盒子</p>
+               <p>agha lsghlas jlgkjasl kghals hgaslghlagls</p>
+               <p>sadgagdas gasgsagasgs</p>
+               <p>asdfasfs</p>
+            </div>
+            <!-- 清除浮动防止内容过高导致的自动换行，把浏览器拖成最窄，再把下一行注释掉试试就明白了，相当于用小东西占了一个位置，来把盒子再次挤到下一行 -->
+            <div class="clearfix visible-xs">
+               <p>在超小型设备上可见</p>
+            </div>
+             <div class="col-xs-6 col-sm-3" style="background-color: #dedef8; border: solid;">
+               <p>第3个盒子</p>
+            </div>
+             <div class="col-xs-6 col-sm-3" style="background-color: #dedef8; border: solid;">
+               <p>第4个盒子</p>
+               <p>gsdaga sgsgsdgas</p>
+               <p>gdsags adgadsgsa dgsad gas</p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

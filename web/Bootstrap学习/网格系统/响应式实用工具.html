@@ -1,0 +1,35 @@
+<!-- 其实就是用一些某些大小下才能出现占位置的元素 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>响应式实用工具，其实就是占个位置</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 引入 Bootstrap -->
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" style="padding: 40px;">
+		<div class="row visable-on">
+			<div class="col-xs-6 col-sm-3" style="background-color: #ddd; border: thin;">
+				<span class="hidden-xs">特别小型消失</span>
+				<span class="visible-xs">出现</span>
+			</div>
+			<div class="col-xs-6 col-sm-3" style="background-color: #ddd; border: thin;">
+				<span class="hidden-sm">小型消失</span>
+				<span class="visible-sm">出现</span>
+			</div>
+			<div class="col-xs-6 col-sm-3" style="background-color: #ddd; border: thin;">
+				<span class="hidden-md">中型消失</span>
+				<span class="visible-md">出现</span>
+			</div>
+			<div class="col-xs-6 col-sm-3" style="background-color: #ddd; border: thin;">
+				<span class="hidden-lg">大型消失</span>
+				<span class="visible-lg">出现</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
