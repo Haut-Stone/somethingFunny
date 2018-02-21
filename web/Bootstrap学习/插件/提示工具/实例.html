@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello!!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- 引入 Bootstrap -->
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- 提示工具和别的不同，必须用JQ脚本来激活 -->
+	<h4>工具提示插件-锚</h4>
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" title="默认的 Tooltip">默认的Tooltip</a>。
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="左侧的 Tooltip">左侧的tip</a>.
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="bottom" title="下侧的 Tooltip">下侧的tip</a>.
+	这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="right" title="右侧的 Tooltip">右侧的tip</a>.
+	
+	<h4>工具提示插件按钮</h4>
+	<button type="button" class="btn btn-default" data-toggle="tooltip" title="默认在上">上</button>
+	<button type="button" class="btn btn-default" data-placement="bottom" data-toggle="tooltip" title="bottom">下</button>
+	<button type="button" class="btn btn-default" data-placement="left" data-toggle="tooltip" title="left">左</button>
+	<button type="button" class="btn btn-default" data-placement="right" data-toggle="tooltip" title="right">右</button>
+	<script>
+		$(function () { $("[data-toggle='tooltip']").tooltip(); });
+	</script>
+</body>
+</html>
