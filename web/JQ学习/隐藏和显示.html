@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Hello!!</title>
+	<script src="JS/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#hide").click(function(){
+				$("p").hide("fast");// 1000毫秒完成动画
+			});
+			$("#show").click(function(){
+				$("p").show("slow");
+			});
+			$("#toggle").click(function(){
+				$("p").toggle(1000);
+			})
+		});
+	</script>
+</head>
+<body>
+	<p>点击按钮，我就会隐藏或者显示</p>
+	<button id="hide">隐藏</button>
+	<button id="show">显示</button>
+	<button id="toggle">隐藏或显示</button>
+</body>
+</html>
