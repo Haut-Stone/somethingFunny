@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Hello!!</title>
+	<script type="text/javascript" src="JS/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#p1").css("color","red").slideUp(2000).slideDown(2000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="p1">通过 jQuery，可以把动作/方法链接在一起。</p>
+	<button>button</button>
+</body>
+</html>

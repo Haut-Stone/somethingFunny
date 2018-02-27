@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Hello!!</title>
+	<script type="text/javascript" src="JS/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("p").append(" <b>追加文本</b>");
+			});
+			$("#btn2").click(function(){
+				$("ol").append(" <li>追加列表项</li>");
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		function appendText(){
+			var txt1 = "<p>文本。</p>";
+			var txt2 = $("<p></p>").text("文本。");
+			var txt3 = document.createElement("p");
+			txt3.innerHTML = "文本。";
+			$("body").append(txt1, txt2, txt3);
+		}
+	</script>
+</head>
+<body>
+	<p>这是一个个段落</p>
+	<p>这是另外一个段落</p>
+	<ol>
+		<li>list item 1</li>
+		<li>list item 2</li>
+		<li>list item 3</li>
+	</ol>
+	<p>这是最后一个的测试段落</p>
+	<button id="btn1">添加文本</button>
+	<button id="btn2">添加列表项</button>
+	<button onclick="appendText()">追加一组文本</button>
+</body>
+</html>

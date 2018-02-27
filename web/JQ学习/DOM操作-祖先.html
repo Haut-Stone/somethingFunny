@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Hello!!</title>
+	<script type="text/javascript" src="JS/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("span").parentsUntil("div").css({
+				"color":"red",
+				"border":"2px solid red"
+			});
+		});
+	</script>
+	<style type="text/css">
+	.ancestors *
+	{ 
+		display: block;
+		border: 2px solid lightgrey;
+		color: lightgrey;
+		padding: 5px;
+		margin: 15px;
+	}
+	</style>
+</head>
+<body class="ancestors"> body (曾曾祖父元素)
+	<div style="width: 500px;"> div (曾祖父元素)
+		<ul> ul (祖父元素) 
+			<li> li (父元素)
+				<span>span</span>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
