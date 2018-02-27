@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>Hello!!</title>
+	<script type="text/javascript" src="JS/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").load("ajxa_demo.txt");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="div1"><h2>使用AJAX来修改这个地方的文本</h2></div>
+	<button>获取外部内容</button>
+</body>
+</html>

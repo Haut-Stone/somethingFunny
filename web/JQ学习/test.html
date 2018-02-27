@@ -2,22 +2,21 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
 <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
 </script>
 <script>
 $(document).ready(function(){
-  $("#hide").click(function(){
-    $("p").hide();
-  });
-  $("#show").click(function(){
-    $("p").show();
-  });
+	$("button").click(function(){
+		$("#div1").load("ajxa_demo.txt");
+	});
 });
 </script>
 </head>
 <body>
-<p>如果你点击“隐藏” 按钮，我将会消失。</p>
-<button id="hide">隐藏</button>
-<button id="show">显示</button>
+
+<div id="div1"><h2>使用 jQuery AJAX 修改文本内容</h2></div>
+<button>获取外部内容</button>
+
 </body>
 </html>

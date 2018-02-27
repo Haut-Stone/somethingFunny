@@ -6,11 +6,30 @@
 	<script type="text/javascript" src="JS/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-			
+			$("span").siblings("p").css({
+				"color":"red",
+				"border":"2px solid red"
+			});
 		});
 	</script>
+	<style type="text/css">
+	.siblings *
+	{ 
+		display: block;
+		border: 2px solid lightgrey;
+		color: lightgrey;
+		padding: 5px;
+		margin: 15px;
+	}
+	</style>
 </head>
-<body>
-
+<body class="siblings">
+	<div> div (父元素)
+		<p>p</p>
+		<span>span</span>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<p>p</p>
+	</div>
 </body>
 </html>
