@@ -1,0 +1,96 @@
+/*
+* @Author: Haut-Stone
+* @Date:   2018-04-03 16:00:18
+* @Last Modified by:   Haut-Stone
+* @Last Modified time: 2018-04-04 13:38:39
+*/
+
+body {
+	color: white;
+	text-align: center;
+	/*引入goole字体上的一种新字体*/
+	font-family: 'Droid Serif', serif;
+	background: url(../img/table.jpg);
+}
+
+#game {
+	border-radius: 6px;
+	border: 1px solid #666;
+	background: url(../img/bg.jpg);
+	width: 660px;
+	height: 584px;
+	margin: 0 auto;
+	padding: 5px;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+
+#cards {
+	position: relative;
+	width: 540px;
+	height: 424px;
+	padding: 5px;
+}
+
+.card {
+	/*使其具有3d效果*/
+	-webkit-perspective: 600;
+	width: 120px;
+	height: 128px;
+	position: absolute;
+	-webkit-transition: all .3s;
+}
+
+.face {
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*那些属性有过渡效果*/
+	-webkit-transition-property: opacity, transform, box-shadow;
+	/*过渡时间*/
+	-webkit-transition-duration: .3s;
+	/*反转后不显示卡背*/
+	-webkit-backface-visibility: hidden;
+}
+
+.front {
+	background: #999 url(../img/deck.jpg) -150px -40px;
+	z-index: 10;
+}
+
+.back {
+	background: #efefef url(../img/cardFace.png);
+	/*先转180度，保证待会转回来是原图*/
+	-webkit-transform: rotate3d(0, 1, 0, -180deg);
+	z-index: 8;
+}
+
+/*hover阴影和常驻阴影*/
+.card:hover .face, .card-flipped .face {
+	-webkit-box-shadow: 0 0 20px #aaa;
+}
+
+/*交换z-index*/
+.card-flipped .front {
+	-webkit-transform: rotate3d(0, 1, 0, 180deg);
+	z-index: 8;
+}
+
+.card-flipped .back {
+	-webkit-transform: rotate3d(0, 1, 0, 0deg);
+	z-index: 10;
+}
+
+/*变透明*/
+.card-removed {
+	opacity: 0;
+}
+
+.card101 { background-position: 0 0; }
+.card102 { background-position: -120px 0;}
+.card103 { background-position: -240px 0;}
+.card104 { background-position: -360px 0;}
+.card111 { background-position: 0 -128px;}
+.card112 { background-position: -120px -128px;}

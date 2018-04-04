@@ -1,0 +1,37 @@
+/*
+* @Author: Haut-Stone
+* @Date:   2018-04-03 16:00:18
+* @Last Modified by:   Haut-Stone
+* @Last Modified time: 2018-04-03 16:03:55
+*/
+
+#playground {
+	background-color: #e0ffe0;
+	width: 400px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+
+#ball {
+	background-color: #fbb;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 150px;
+	top: 100px;
+	border-radius: 10px;
+}
+
+.paddle {
+	background-color: #bbf;
+	left: 50px;
+	top: 70px;
+	position: absolute;
+	width: 30px;
+	height: 70px;
+}
+
+#paddleB {
+	left: 320px;
+}
